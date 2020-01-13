@@ -1,0 +1,100 @@
+html,
+body {
+    font-family: 'sansation_lightregular';
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+p{
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+    font-family: 'sansationbold_italic';
+    src: url('../font/sansation_bold_italic-webfont.woff2') format('woff2'),
+         url('../font/sansation_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sansationbold';
+    src: url('../font/sansation_bold-webfont.woff2') format('woff2'),
+         url('../font/sansation_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sansationitalic';
+    src: url('../font/sansation_italic-webfont.woff2') format('woff2'),
+         url('../font/sansation_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sansation_lightitalic';
+    src: url('../font/sansation_light_italic-webfont.woff2') format('woff2'),
+         url('../font/sansation_light_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sansation_lightregular';
+    src: url('../font/sansation_light-webfont.woff2') format('woff2'),
+         url('../font/sansation_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sansationregular';
+    src: url('../font/sansation_regular-webfont.woff2') format('woff2'),
+         url('../font/sansation_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+img{
+    display: block;
+}
+$color_white: #ffffff;
+$color_black: #000000;
+$color_display: #f6f9fc;
+.title_section{
+    margin-bottom: $baseline5;
+    h2,h6{
+    }
+    h2{
+        font-size: 40px;
+    }
+    h6{
+        text-transform:uppercase;
+        font-family: 'sansationbold';
+        font-size: 8px;
+        letter-spacing: 4px;
+        margin-bottom: $baseline1;
+    }
+}
+$sansation-bold_italic: 'sansationbold_italic';
+$sansation-bold: 'sansationbold';
+$sansation-light_italic: 'sansation_lightitalic';
+$sansation-light: 'sansation_lightregular';
+$sansation_italic: 'sansationitalic';
+$sansation: 'sansationregular';

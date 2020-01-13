@@ -1,0 +1,122 @@
+.panel{
+    &_wrapper{
+      width: 600px;
+      margin: 40px auto;
+      h2,h6{
+        text-align: center;
+      }
+    }
+    &_header{
+        margin:auto auto -50px;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background: $color_white;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 6px 2px rgba(217,219,222,0.3);
+        -moz-box-shadow: 0px 0px 6px 2px rgba(217,219,222,0.3);
+        box-shadow: 0px 0px 6px 2px rgba(217,219,222,0.3);
+        img{
+          position: absolute;
+          width:40px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+        &:hover{
+          img{
+            transform: translate(-50%,-48%);
+          }
+        }
+    }
+    &_content{
+      border-radius: 10px;
+      background-color: $color_white;
+      padding:$baseline10 $baseline5 $baseline5;
+      overflow: hidden;
+      -webkit-box-shadow: 0px 0px 6px 2px rgba(217,219,222,0.3);
+      -moz-box-shadow: 0px 0px 6px 2px rgba(217,219,222,0.3);
+      box-shadow: 0px 0px 6px 2px rgba(217,219,222,0.3);
+      ul{
+        border-top: 2px solid #e6ebf1;
+        border-bottom: 2px solid #e6ebf1;
+        padding:0 4px;
+      }
+      ol{
+        border-bottom: 2px solid #e6ebf1;
+        padding:0 4px;
+        margin-bottom: $baseline7;
+        div{
+          padding-left: 24px;
+        }
+      }
+      li{
+        height: 60px;
+        line-height: 60px;
+        padding-left: 10px;
+        border-bottom: 1px solid #e6ebf1;
+        &:last-child{
+          border: 0;
+        }
+        span{
+          font-family: $sansation-bold;
+        }
+        input{
+          position: relative;
+          height: 100%;
+          float: right;
+          background: $color_display;
+          padding-left: 24px;
+          font-family: $sansation_italic;
+          width: 50%;
+          border: 1px solid $color_display;
+          transition: all 0.8s ease-out;
+          &:hover{
+            border-color:darken($color_display, 20%);
+            background: darken($color_display, 5%);
+          }
+        }
+        div{
+          float:right;
+          height: 100%;
+          width: 50%;
+        }
+      }
+    }
+    &_btn{
+      float: right;
+      background-color:#44c767;
+      border-radius:28px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:16px;
+      padding:16px 31px;
+      text-decoration:none;
+      transition: all 0.8s ease-out;
+      border: 0;
+      &:active {
+        position:relative;
+        top:1px;
+      }
+      
+    }
+}
+.select-pod{
+  background: $color_display;
+  overflow: hidden;
+  select{
+    width: 110%;
+    background: transparent;
+    border: none;
+    height: 100%;
+    padding-left: 24px;
+    font-family: $sansation_italic;
+    outline: 0;
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+  }
+  }
+}

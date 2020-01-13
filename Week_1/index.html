@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Brand/style/style_guide.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+    <title>Week One</title>
+</head>
+<body>
+    <div class="panel_wrapper">
+        <div class="panel_header"><img src="../Brand/img/plan-b_icon.svg" alt=""></div>
+        <div class="panel_content">
+            <div class="title_section">
+                <h6>Week one</h6>
+                <h2>calculator</h2>
+            </div>
+            <form action="">
+                <ul>
+                    <li><span>Value 1</span> <input type="text" id="value1" placeholder="add value"></li>
+                    <li><span>Value 2</span> <input type="text" id="value2" placeholder="add value"></li>
+                    <li><span>Operator</span>
+                        <div class="select-pod">
+                            <select id="operator">
+                                <option value="add">Add</option>
+                                <option value="min">Minus</option>
+                                <option value="div">Divide</option>
+                                <option value="mul">Multiply</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <ol>
+                    <li><span>Total</span><div id="results"></div></li>
+                </ol>
+                
+                <button type="button" onclick="calc()" class="panel_btn">Calculate</button>
+            </form>
+        </div>
+    </div><!-- calc_wrapper -->
+    <script>
+        function calc(){
+    var a = parseInt(document.querySelector("#value1").value);
+    var b = parseInt(document.querySelector("#value2").value);
+    var op = document.querySelector("#operator").value;
+    var calculator;
+
+    if (op == "add"){
+        calculator = a + b;
+    }   else if (op == "min"){
+        calculator = a - b;
+    }   else if (op == "div"){
+        calculator = a / b;
+    }   else if (op == "mul"){
+        calculator = a * b;
+    }
+
+    document.querySelector("#results").innerHTML = calculator;
+
+}
+    </script>
+</body>
+</html>
