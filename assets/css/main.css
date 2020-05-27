@@ -1,0 +1,220 @@
+/* --- HELPERS ---*/
+/* --- BASE ---*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@font-face {
+  font-family: "Klavika Lt";
+  src: url("../fonts/Klavika-Light.woff2") format("woff2"), url("../fonts/Klavika-Light.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Klavika Md";
+  src: url("../fonts/Klavika-Medium.woff2") format("woff2"), url("../fonts/Klavika-Medium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Klavika Bd";
+  src: url("../fonts/Klavika-Bold.woff2") format("woff2"), url("../fonts/Klavika-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* --- FONT FACE VARIABLE --- */
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 2;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.page_wrapper {
+  padding: 60px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero_section-banner {
+    height: 400px;
+  }
+
+  .slide_viewer {
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .title_section h2, .title_section h4 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .title_section h3, .title_section h6 {
+    font-size: 22px;
+  }
+  .title_section h5 {
+    font-size: 20px;
+  }
+
+  .intro_content-section .content_section ul {
+    display: flex;
+    margin: 0 -20px;
+  }
+  .intro_content-section .content_section li {
+    width: 33.3%;
+  }
+  .intro_content-section .content_pod {
+    padding: 20px;
+  }
+  .intro_content-section .content_pod-wrapper {
+    min-height: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title_section h2, .title_section h4 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+  .title_section h3, .title_section h6 {
+    font-size: 18px;
+  }
+  .title_section h5 {
+    font-size: 16px;
+  }
+
+  .intro_content-section .content_section li {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero_section-banner {
+    height: 300px;
+  }
+
+  .slide_viewer {
+    height: 500px;
+  }
+}
+@media (min-width: 560px) and (max-width: 767px) {
+  .hero_section-banner {
+    height: 250px;
+  }
+
+  .slide_viewer {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 559px) {
+  .hero_section-banner {
+    height: 250px;
+  }
+
+  .slide_viewer {
+    height: 300px;
+  }
+}
+/* --- LAYOUT ---*/
+.about_us-banner {
+  background-image: url("../imgs/about_us.jpg");
+}
+
+.business-banner {
+  background-image: url("../imgs/business-banner.jpg");
+}
+
+.contact_us-banner {
+  background-image: url("../imgs/contact_us-banner.jpg");
+}
+
+/* --- COMPONENT ---*/
+.header_section {
+  margin-bottom: 60px;
+}
+.header_section .logo {
+  display: block;
+  height: 50px;
+  width: 100px;
+  float: left;
+}
+.header_section .logo img {
+  display: block;
+  width: 100%;
+}
+.header_section ul {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */

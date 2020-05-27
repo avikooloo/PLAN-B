@@ -1,0 +1,18 @@
+.header{
+    &_section{
+        margin-bottom: $base_10;
+        .logo{
+            display: block;
+            height: 50px;
+            width:100px;
+            float: left;
+            img{
+                display: block;
+                width:100%;
+            }
+        }
+        ul{
+            display: flex;
+        }
+    }
+}

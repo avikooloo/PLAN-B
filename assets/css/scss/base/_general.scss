@@ -1,0 +1,98 @@
+html, body{ padding:0; margin:0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; line-height: 2;}
+html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 100%;}
+*, *:before, *:after { -webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit;}
+.page_wrapper{
+    padding: $base_10;
+}
+@include mq-min(tablet-wide){
+    .hero_section{
+        &-banner{
+            height:400px;
+        }
+    }
+    .slide_viewer{
+        height:700px;
+    }
+}
+@include mq-min(tablet){
+    .title_section{
+        h2,h4{
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h3,h6{
+            font-size: 22px;
+        }
+        h5{
+            font-size: 20px;
+        }
+    }
+    .intro_content-section{
+        .content_section{
+            ul{
+                display: flex;
+                margin:0 -20px;
+            }
+            li{
+                width: 33.3%;
+            }
+        }
+        .content_pod{
+            padding: 20px;
+            &-wrapper{
+                min-height:200px;
+            }
+        }
+    }
+}
+@include mq-max(tablet){
+    .title_section{
+        h2,h4{
+            font-size: 28px;
+            margin-bottom: 18px;
+        }
+        h3,h6{
+            font-size: 18px;
+        }
+        h5{
+            font-size: 16px;
+        }
+    }
+    .intro_content-section{
+        .content_section{
+            li{
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+@include respond-between(tablet,tablet-wide){
+    .hero_section{
+        &-banner{
+            height:300px;
+        }
+    }
+    .slide_viewer{
+        height:500px;
+    }
+}
+@include respond-between(phablet,tablet){
+    .hero_section{
+        &-banner{
+            height:250px;
+        }
+    }
+    .slide_viewer{
+        height:400px;
+    }
+}
+@include mq-max(phablet){
+    .hero_section{
+        &-banner{
+            height:250px;
+        }
+    }
+    .slide_viewer{
+        height:300px;
+    }
+}
